@@ -1,0 +1,23 @@
+{
+  "name": "composable",
+  "version": "0.1.0",
+  "description": "Easily compose complex and reusable ffmpeg filters using JavaScript functions and generate the command string on the fly",
+  "main": "lib/main.js",
+  "repository": "scorchpt/composable",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^7.0.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ffmpeg",
+    "video",
+    "filters",
+    "functional",
+    "composition"
+  ],
+  "author": "Pedro M. Silva <pemiolsi@hotmail.com>",
+  "license": "ISC"
+}
