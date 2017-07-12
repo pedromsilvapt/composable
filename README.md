@@ -11,8 +11,8 @@ npm install --save composable
 Just require the filters from this module and use them.
 > **Note** This project comes with typescript definition files right out of the box. Type away!
 ```javascript
-import { compile, filters, sources } from "composable";
-import { trim, concat } from "composable";
+import { trim, concat, source, } from "composable";
+import { compile, command } from "composable";
 
 // These will be the times we want to trim
 const times = [ [ 0, 10 ], [ 20, 30 ], [ 40, 50 ] ];
@@ -20,18 +20,25 @@ const times = [ [ 0, 10 ], [ 20, 30 ], [ 40, 50 ] ];
 const video = [];
 const audio = [];
 
+let file = source( "C:\\\\source\\\\file\\\\path.mkv" );
+
 for ( let time of times ) {
-    const [ v, a ] = trim( '0:v', '0:a', time[ 0 ], time[ 1 ] );
+    const [ v, a ] = trim( file.select( 'v' ), file.select( 'a' ), time[ 0 ], time[ 1 ] );
 
     video.push( v );
     audio.push( a );
 }
 
-const [ outV, outA ] = concat( video, audio );
 
-const command = compile( [ '-filter_complex "', filters( [ outV, outA ] ), '" ' ] ).toString();
+// Note that each stream in this case needs to be a stream factory: a method that returns a stream
+const [ sepV, sepA ] = [ () => color( 'black', 854, 480, 3 ), () => silence( 3 ) ];
 
-console.log( command );
+// Adds a 3-second black scene between eahc original scene
+const [ outV, outA ] = concat( separator( video, sepV ), separator( audio, sepA ) );
+
+console.log( command( [ outV, outA ], 'C:\\\\generated\\\\file\\\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).generate() );
+// Or run the command right away
+command( [ outV, outA ], 'C:\\\\generated\\\\file\\\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).execute();
 ```
 
 Will result in the following output:
@@ -58,3 +65,35 @@ The core concept of composable are streams. You give them as arguments, and you 
 
 ## Filters
 Every filter offers a functional API to keep things simple and clean. On the inside, however, every filter is a class that contains all the information it needs. Because most functions in the public API return the streams outputed by the filter, and not the filter itself, there is a handy attribute on every stream called `source` that gives access to the filter that originated that stream.
+
+## API
+### trim
+> trim ( video : Stream, audio : Stream, start : number, end : number ) : [ Stream, Stream ];
+
+Trims the video and audio at the same time, beginning at `start` and ending at `end`;
+
+### source
+> source ( file : string ) : SourceStream;
+
+Returns a stream that comes from a file source.
+
+### concat
+> concat ( videos : Stream[], audios : Stream[] ) : [ Stream, Stream ];
+
+Receives a list of videos and a list of audios, and concatenates them in order.
+
+### color
+> color ( color : string, width : number, height : number, duration ?: number ) : OutputStream;
+
+Returns a video stream with the specified resolution, with nothing more than the background color for the specified duration.
+
+### silence
+> silence ( duration ?: number ) : OutputStream;
+
+Returns a silent audio stream with an optional duration.
+
+## command
+> command( streams : Stream[], output ?: string, options ?: Partial<CommandOptions> ) : CommandFragment
+
+Generates a command fragment that can be used to output the command as a string, using the `generate()` method, or can
+run the command right away in a child_process using `execute()`. Executing returns a NodeJs.ReadableStream containing the `stdout` of the process.

@@ -80,7 +80,7 @@ export class SourceStream extends OutputStream {
         compiler.getInputStreamName( this );
 
         // const content = `-i ${ jsesc( this.input, { quotes: 'double', wrap: true } ) }`;
-        const content = `-i ${ '"' + this.input + '"' }`;
+        const content = `-i ${ '"' + this.input.replace( /\\/g, '\\\\' ) + '"' }`;
         // const content = `-i 1`;
 
         return [ { type: 'source', content } ];

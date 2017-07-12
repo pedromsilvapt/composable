@@ -73,14 +73,14 @@ export function concat ( video : Stream[] | Stream[][], audio : Stream[] | Strea
     return filter.outputs;
 }
 
-export function separator<T> ( items : T[], separator : T ) : T[] {
+export function separator<T> ( items : T[], separator : ( index : number, item : T ) => T ) : T[] {
     const separated : T[] = [];
 
     for ( let i = 0; i < items.length; i++ ) {
         separated.push( items[ i ] );
 
         if ( i + 1 < items.length ) {
-            separated.push( separator );
+            separated.push( separator( i, items[ i ] ) );
         }
     }
 

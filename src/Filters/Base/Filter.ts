@@ -16,7 +16,7 @@ export class NativeFilter implements IFilter {
 
     namedArguments : FilterNamedArguments;
 
-    inputs : Stream[];
+    inputs : Stream[] = [];
     
     outputs : OutputStream[];
 
