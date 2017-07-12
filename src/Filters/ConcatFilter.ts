@@ -14,19 +14,6 @@ export class ConcatFilter extends NativeFilter {
 
         return super.generateOutputs();
     }
-
-    // constructor ( inputs ?: Stream[], named ?: FilterNamedArguments );
-    // constructor ( inputs ?: Stream[], positional ?: FilterArgument[], named ?: FilterNamedArguments );
-    // constructor ( inputs : Stream[] = [], positional ?: FilterArgument[] | FilterNamedArguments, named ?: FilterNamedArguments ) {
-    //     super( 'concat', inputs, positional as any, named );
-
-    //     const n = this.getParameter<number>( 'v', 1 );
-    //     const a = this.getParameter<number>( 'a', 0 );
-
-        
-
-    //     this.outputs = Array.from( new Array( n + a ), () => new DynamicStream( this ) );
-    // }
 }
 
 function secondDimension<T> ( array : T[] | T[][] ) : T[][] {
@@ -71,7 +58,7 @@ export function concat ( video : Stream[] | Stream[][], audio : Stream[] | Strea
 
     const v = video.length;
     const a = audio.length;
-    const n = ( v ? video[ 0 ].length : 0 ) + ( a ? audio[ 0 ].length : 0 );
+    const n = ( v ? video[ 0 ].length : ( a ? audio[ 0 ].length : 0 ) );
 
     const streams = interweave( ...video, ...audio );
 
@@ -84,4 +71,18 @@ export function concat ( video : Stream[] | Stream[][], audio : Stream[] | Strea
     const filter = new ConcatFilter( { n, v, a } ).from( streams );
 
     return filter.outputs;
+}
+
+export function separator<T> ( items : T[], separator : T ) : T[] {
+    const separated : T[] = [];
+
+    for ( let i = 0; i < items.length; i++ ) {
+        separated.push( items[ i ] );
+
+        if ( i + 1 < items.length ) {
+            separated.push( separator );
+        }
+    }
+
+    return separated;
 }

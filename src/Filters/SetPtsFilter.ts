@@ -1,8 +1,6 @@
 import { NativeFilter, FilterNamedArguments, FilterArgument } from "./Base/Filter";
 import { Stream, DynamicStream, OutputStream } from "../Stream";
 
-// setpts=PTS-STARTPTS
-
 export class GenericSetPtsFilter extends NativeFilter {
     parameters : string[] = [ 'expr' ];    
 }

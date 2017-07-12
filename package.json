@@ -2,9 +2,13 @@
   "name": "composable",
   "version": "0.1.0",
   "description": "Easily compose complex and reusable ffmpeg filters using JavaScript functions and generate the command string on the fly",
-  "main": "lib/main.js",
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
   "repository": "scorchpt/composable",
-  "dependencies": {},
+  "dependencies": {
+    "jsesc": "^2.5.1",
+    "parse-spawn-args": "^1.0.2"
+  },
   "devDependencies": {
     "@types/node": "^7.0.16"
   },

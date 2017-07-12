@@ -1,6 +1,7 @@
 import { IFragment, Emission } from "./Compiler/IFragment";
 import { ICompiler } from "./Compiler/ICompiler";
 import { IFilter } from "./Filters/Base/IFilter";
+import * as jsesc from 'jsesc';
 
 export type Stream = string | OutputStream | DyanamicInputStream;
 
@@ -21,6 +22,10 @@ export abstract class OutputStream implements IFragment {
 
     redirect ( name : string ) : StaticStream {
         return new StaticStream( this.source, name );
+    }
+
+    select ( selection : string ) : SelectionStream {
+        return new SelectionStream( this, selection );
     }
 }
 
@@ -60,4 +65,57 @@ export class DyanamicInputStream extends OutputStream {
 
         return '' + compiler.getInputStreamName( this );
     }
+}
+
+export class SourceStream extends OutputStream {
+    input : string;
+
+    constructor ( input : string ) {
+        super( null );
+
+        this.input = input;
+    }
+
+    emit ( compiler : ICompiler ) : Emission[] {
+        compiler.getInputStreamName( this );
+
+        // const content = `-i ${ jsesc( this.input, { quotes: 'double', wrap: true } ) }`;
+        const content = `-i ${ '"' + this.input + '"' }`;
+        // const content = `-i 1`;
+
+        return [ { type: 'source', content } ];
+    }
+
+    compile ( compiler : ICompiler ) : string {
+        compiler.emit( this );
+
+        return '' + compiler.getInputStreamName( this );
+    }
+}
+
+export class SelectionStream extends OutputStream {
+    parent : OutputStream;
+
+    specification : string;
+
+    constructor ( parent : OutputStream, specification : string ) {
+        super( parent.source );
+
+        this.parent = parent;
+        this.specification = specification;
+    }
+
+    emit ( compiler : ICompiler ) : Emission[] {
+        compiler.emit( this.parent );
+
+        return [];
+    }
+
+    compile ( compiler : ICompiler ) : string {
+        return this.parent.compile( compiler ) + ':' + this.specification;
+    }
+}
+
+export function source ( input : string ) : SourceStream {
+    return new SourceStream( input );
 }
