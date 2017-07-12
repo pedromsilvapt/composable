@@ -1,6 +1,6 @@
 {
   "name": "composable",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Easily compose complex and reusable ffmpeg filters using JavaScript functions and generate the command string on the fly",
   "main": "./lib/main.js",
   "types": "./lib/main.d.ts",
