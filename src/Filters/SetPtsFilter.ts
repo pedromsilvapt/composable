@@ -13,7 +13,7 @@ export class SetPtsFilter extends GenericSetPtsFilter {
     name : string = 'setpts';
 }
 
-export function setpts ( video : Stream, audio : Stream, expr : string ) : OutputStream[] {
+export function setpts ( video : Stream, audio : Stream, expr : string ) : [ OutputStream, OutputStream ] {
     return [ vsetpts( video, expr ), asetpts( audio, expr ) ];
 }
 

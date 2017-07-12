@@ -11,7 +11,9 @@ npm install --save composable
 Just require the filters from this module and use them.
 > **Note** This project comes with typescript definition files right out of the box. Type away!
 ```javascript
-import { trim, concat, source, } from "composable";
+import { trim, concat, source } from "composable";
+import { color, silence } from "composable";
+import { separator } from "composable";
 import { compile, command } from "composable";
 
 // These will be the times we want to trim
@@ -20,7 +22,7 @@ const times = [ [ 0, 10 ], [ 20, 30 ], [ 40, 50 ] ];
 const video = [];
 const audio = [];
 
-let file = source( "C:\\\\source\\\\file\\\\path.mkv" );
+let file = source( "C:\\source\\file\\path.mkv" );
 
 for ( let time of times ) {
     const [ v, a ] = trim( file.select( 'v' ), file.select( 'a' ), time[ 0 ], time[ 1 ] );
@@ -31,14 +33,14 @@ for ( let time of times ) {
 
 
 // Note that each stream in this case needs to be a stream factory: a method that returns a stream
-const [ sepV, sepA ] = [ () => color( 'black', 854, 480, 3 ), () => silence( 3 ) ];
+const [ sepV, sepA ] = [ () => color( 'black', 1920, 1080, 3 ), () => silence( 3 ) ];
 
 // Adds a 3-second black scene between eahc original scene
 const [ outV, outA ] = concat( separator( video, sepV ), separator( audio, sepA ) );
 
-console.log( command( [ outV, outA ], 'C:\\\\generated\\\\file\\\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).generate() );
+console.log( command( [ outV, outA ], 'C:\\generated\\file\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).generate() );
 // Or run the command right away
-command( [ outV, outA ], 'C:\\\\generated\\\\file\\\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).execute();
+command( [ outV, outA ], 'C:\\generated\\file\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).execute();
 ```
 
 Will result in the following output:

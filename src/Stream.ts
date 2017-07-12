@@ -70,17 +70,20 @@ export class DyanamicInputStream extends OutputStream {
 export class SourceStream extends OutputStream {
     input : string;
 
-    constructor ( input : string ) {
+    args : string[];
+
+    constructor ( input : string, args : string[] = [] ) {
         super( null );
 
         this.input = input;
+        this.args = args;
     }
 
     emit ( compiler : ICompiler ) : Emission[] {
         compiler.getInputStreamName( this );
 
         // const content = `-i ${ jsesc( this.input, { quotes: 'double', wrap: true } ) }`;
-        const content = `-i ${ '"' + this.input.replace( /\\/g, '\\\\' ) + '"' }`;
+        const content = `${ this.args.join( ' ' ) } -i ${ '"' + this.input.replace( /\\/g, '\\\\' ) + '"' }`;
         // const content = `-i 1`;
 
         return [ { type: 'source', content } ];
@@ -116,6 +119,6 @@ export class SelectionStream extends OutputStream {
     }
 }
 
-export function source ( input : string ) : SourceStream {
-    return new SourceStream( input );
+export function source ( input : string, args : string[] = [] ) : SourceStream {
+    return new SourceStream( input, args );
 }

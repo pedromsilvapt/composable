@@ -14,7 +14,7 @@ export class TrimFilter extends GenericTrimFilter {
     name : string = 'trim';
 }
 
-export function trim ( video : Stream, audio : Stream, start : number, end : number ) : OutputStream[] {
+export function trim ( video : Stream, audio : Stream, start : number, end : number ) : [OutputStream, OutputStream] {
     return [ vtrim( video, start, end ), atrim( audio, start, end ) ];
 }
 
