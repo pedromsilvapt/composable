@@ -83,8 +83,8 @@ export class SourceStream extends OutputStream {
         compiler.getInputStreamName( this );
 
         // const content = `-i ${ jsesc( this.input, { quotes: 'double', wrap: true } ) }`;
-        const content = `${ this.args.join( ' ' ) } -i ${ '"' + this.input.replace( /\\/g, '\\\\' ) + '"' }`;
         // const content = `-i 1`;
+        const content = `${ this.args.join( ' ' ) } -i ${ '"' + this.input.replace( /\\/g, '\\\\' ) + '"' }`;
 
         return [ { type: 'source', content } ];
     }
@@ -121,4 +121,8 @@ export class SelectionStream extends OutputStream {
 
 export function source ( input : string, args : string[] = [] ) : SourceStream {
     return new SourceStream( input, args );
+}
+
+export function named ( name : string ) : StaticStream {
+    return new StaticStream( null, name );
 }

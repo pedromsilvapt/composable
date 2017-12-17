@@ -91,7 +91,9 @@ export class NativeFilter implements IFilter {
     compileArguments ( compiler : ICompiler ) : string {
         const positional = this.positionalArguments;
 
-        const named = Object.keys( this.namedArguments ).map( key => `${key}=${ this.namedArguments[ key ] }` );
+        const named = Object.keys( this.namedArguments )
+            .filter( key => this.namedArguments[ key ] !== null && this.namedArguments[ key ] !== void 0 )
+            .map( key => `${key}=${ this.namedArguments[ key ] }` );
 
         return [ ...positional, ...named ].join( ':' );
     }
