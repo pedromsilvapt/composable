@@ -84,6 +84,24 @@ Returns a stream that comes from a file source.
 
 Receives a list of videos and a list of audios, and concatenates them in order.
 
+### boxblur
+> export function boxblur ( input : Stream, named ?: FilterNamedArguments ) : OutputStream;
+
+> export function boxblur ( input : Stream, positional : FilterArgument[], named ?: FilterNamedArguments ) : OutputStream;
+
+Blurs a given video stream.
+
+#### Example
+Blur a video between 5 and 15 seconds.
+```typescript
+video = boxblur( video, { luma_radius: 60, enable: `'between(t,5,15)'` } );
+```
+
+### blackout
+> export function blackout ( input : Stream, width : number, height : number, start : number, end : number ) : OutputStream;
+
+Receives a video stream and covers it with a black screen for the specified duration.
+
 ### color
 > color ( color : string, width : number, height : number, duration ?: number ) : OutputStream;
 
@@ -93,6 +111,11 @@ Returns a video stream with the specified resolution, with nothing more than the
 > silence ( duration ?: number ) : OutputStream;
 
 Returns a silent audio stream with an optional duration.
+
+### mute
+> export function mute ( input : Stream, start : number, end : number ) : OutputStream;
+
+Receives an audio stream and mutes a specific part of it.
 
 ## command
 > command( streams : Stream[], output ?: string, options ?: Partial<CommandOptions> ) : CommandFragment
