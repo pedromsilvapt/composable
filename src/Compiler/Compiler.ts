@@ -2,10 +2,9 @@ import { IFragment, FragmentLike, Emission } from "./IFragment";
 import { ICompiler } from "./ICompiler";
 import { RawFragment } from "./RawFragment";
 import { Stream } from "../Stream";
-import { exec, execSync, spawn } from "child_process";
+import { spawn } from "child_process";
 import { parse as parseSpawnArgs } from 'parse-spawn-args';
 import * as stream from 'stream';
-import * as jsesc from 'jsesc';
 
 export class Compiler implements ICompiler {
     emitted : Set<FragmentLike> = new Set;
@@ -29,7 +28,7 @@ export class Compiler implements ICompiler {
     }
 
     emit ( fragment : FragmentLike ) {
-        if ( typeof fragment !== 'string' ) {
+        if ( fragment && typeof fragment !== 'string' ) {
             if ( !this.emitted.has( fragment ) ) {
                 this.emitted.add( fragment );
 

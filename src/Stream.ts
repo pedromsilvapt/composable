@@ -55,7 +55,9 @@ export class StaticStream extends OutputStream {
 
 export class DyanamicInputStream extends OutputStream {
     emit ( compiler : ICompiler ) : Emission[] {
-        compiler.emit( this.source );
+        if ( this.source ) {
+            compiler.emit( this.source );
+        }
         
         return [];
     }

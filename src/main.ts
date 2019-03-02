@@ -10,10 +10,11 @@ export { crossfade } from './Filters/CrossfadeFilter';
 export { concat, separator } from './Filters/ConcatFilter';
 export { boxblur } from './Filters/BoxblurFilter';
 export { aformat, format } from './Filters/FormatFilter';
-export { overlay } from './Filters/OverlayFilter';
+export { overlay, blackout } from './Filters/OverlayFilter';
 export { asetpts, setpts, vsetpts } from './Filters/SetPtsFilter';
 export { trim, atrim, vtrim } from './Filters/TrimFilter';
 export { scale } from './Filters/ScaleFilter';
+export { volume, mute } from './Filters/VolumeFilter';
 export { source } from './Stream';
 
 export { color } from './Filters/Sources/Color';
