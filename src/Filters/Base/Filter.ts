@@ -117,4 +117,18 @@ export class NativeFilter implements IFilter {
 
         return `${ inputs }${ this.name }${ args ? '=' + args : '' }${ outputs }`;
     }
+    
+    redirect ( source : Stream, redirected : Stream ) : IFilter {
+        const instance : NativeFilter = new (this.constructor as any)();
+
+        instance.name = this.name;
+        instance.positionalArguments = this.positionalArguments;
+        instance.namedArguments = this.namedArguments;
+        instance.inputs = this.inputs;
+        instance.outputs = this.outputs.filter( out => out === source ? redirected : out );
+        instance.parameters = this.parameters;
+        instance.outputsCount = this.outputsCount;
+        
+        return instance;
+    }
 }

@@ -20,4 +20,8 @@ export class FilterChain implements IFilter {
     compile ( compiler : ICompiler ) : string {
         return this.filters.map( filter => filter.compile( compiler ) ).join( ',' );
     }
+
+    redirect ( source : Stream, redirected : Stream ) : IFilter {
+        return new FilterChain( this.filters.slice() );
+    }
 }

@@ -1,7 +1,6 @@
 import { IFragment, Emission } from "./Compiler/IFragment";
 import { ICompiler } from "./Compiler/ICompiler";
 import { IFilter } from "./Filters/Base/IFilter";
-import * as jsesc from 'jsesc';
 
 export type Stream = string | OutputStream | DyanamicInputStream;
 
@@ -21,7 +20,11 @@ export abstract class OutputStream implements IFragment {
     abstract compile ( compiler : ICompiler ) : string;
 
     redirect ( name : string ) : StaticStream {
-        return new StaticStream( this.source, name );
+        const redirected = new StaticStream( null, name );
+
+        redirected.source = this.source.redirect( this, redirected );
+
+        return redirected;
     }
 
     select ( selection : string ) : SelectionStream {

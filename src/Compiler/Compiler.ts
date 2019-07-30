@@ -19,7 +19,7 @@ export class Compiler implements ICompiler {
 
     sources : IndexableIdentifierGenerator<Stream>;
 
-    constructor ( fragments : FragmentLike[], sources : number = 0 ) {
+    constructor ( fragments : FragmentLike[] = [], sources : number = 0 ) {
         this.fragments = fragments;
 
         this.sources = new IndexableIdentifierGenerator<Stream>( sources );
@@ -57,6 +57,10 @@ export class Compiler implements ICompiler {
 
     getStreamName ( stream : Stream ) : string {
         return this.streams.get( stream );
+    }
+
+    setStreamName ( stream : Stream, name : string ) {
+        this.streams.set( stream, name );
     }
 
     getInputStreamName ( stream : Stream ) : number {
@@ -103,6 +107,10 @@ export abstract class IdentifierGenerator<T, K> {
         this.cache.set( key, value );
 
         return value;
+    }
+
+    set ( key : T, name : K ) {
+        this.cache.set( key, name );
     }
 }
 
@@ -169,6 +177,12 @@ export class EmissionsFragment implements IFragment {
     }
 
     compile ( compiler : ICompiler ) : string {
+        for ( let stream of this.streams ) {
+            if ( typeof stream !== 'string' ) {
+                compiler.compile( stream );
+            }
+        }
+
         let emissions = compiler.getEmissionsFor( this.emission ).join( this.separator );
 
         if ( this.mapper ) {
