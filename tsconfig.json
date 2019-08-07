@@ -3,6 +3,7 @@
         "target": "es6",
         "module": "commonjs",
         "moduleResolution": "node",
+        "esModuleInterop": true,
         "noImplicitAny": true,
         "sourceMap": true,
         "types": [
@@ -10,7 +11,10 @@
         ],
         "outDir": "lib/",
         "experimentalDecorators": true,
-        "declaration": true
+        "declaration": true,
+        "lib": [
+            "es2015.promise", "es2015", "esnext.asynciterable", "esnext"
+        ]
     },
     "include": [
         "src/**/*"

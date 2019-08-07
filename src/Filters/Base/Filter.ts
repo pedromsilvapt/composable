@@ -82,9 +82,7 @@ export class NativeFilter implements IFilter {
                 return '[' +  stream + ']';
             }
 
-            compiler.emit( stream );
-
-            return '[' +  stream.compile( compiler ) + ']';
+            return '[' +  compiler.compile( stream ) + ']';
         } ).join( '' );
     }
 
@@ -99,12 +97,8 @@ export class NativeFilter implements IFilter {
     }
 
     emit ( compiler : ICompiler ) : Emission[] {
-        for ( let input of this.inputs ) {
-            if ( input instanceof OutputStream && input.source ) {
-                compiler.emit( input.source );
-            }
-        }
-
+        compiler.emit( this.inputs );
+        
         return [ { type: 'filter', content: this.compile( compiler ) } ];
     }
 

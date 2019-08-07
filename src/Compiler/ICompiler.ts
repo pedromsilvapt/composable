@@ -2,9 +2,9 @@ import { Stream } from "../Stream";
 import { IFragment, FragmentLike } from "./IFragment";
 
 export interface ICompiler {
-    emit ( fragment : IFragment ) : void;
+    emit ( fragment : IFragment | FragmentLike[] ) : void;
 
-    compile ( fragment : FragmentLike ) : void;
+    compile ( fragment : FragmentLike | FragmentLike[] ) : string;
 
     hasStreamName ( stream : Stream ) : boolean;
 

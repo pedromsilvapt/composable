@@ -26,8 +26,6 @@ export class ColorSourceStream extends OutputStream {
     }
 
     compile ( compiler : ICompiler ) : string {
-        compiler.emit( this );
-
         return '' + compiler.getInputStreamName( this ) + ':v';
     }
 }

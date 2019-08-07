@@ -16,8 +16,6 @@ export class SilenceSourceStream extends OutputStream {
     }
 
     compile ( compiler : ICompiler ) : string {
-        compiler.emit( this );
-
         return '' + compiler.getInputStreamName( this ) + ':a';
     }
 }

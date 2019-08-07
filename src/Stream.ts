@@ -2,7 +2,7 @@ import { IFragment, Emission } from "./Compiler/IFragment";
 import { ICompiler } from "./Compiler/ICompiler";
 import { IFilter } from "./Filters/Base/IFilter";
 
-export type Stream = string | OutputStream | DyanamicInputStream;
+export type Stream = string | OutputStream;
 
 export abstract class OutputStream implements IFragment {
     source : IFilter;
@@ -12,7 +12,9 @@ export abstract class OutputStream implements IFragment {
     }
 
     emit ( compiler : ICompiler ) : Emission[] {
-        compiler.emit( this.source );
+        if ( this.source ) {
+            compiler.emit( this.source );
+        }
 
         return [];
     }
@@ -34,8 +36,6 @@ export abstract class OutputStream implements IFragment {
 
 export class DynamicStream extends OutputStream {
     compile ( compiler : ICompiler ) : string {
-        compiler.emit( this );
-
         return compiler.getStreamName( this );
     }
 }
@@ -50,24 +50,12 @@ export class StaticStream extends OutputStream {
     }
     
     compile ( compiler : ICompiler ) {
-        compiler.emit( this );
-        
         return this.name;
     }
 }
 
 export class DyanamicInputStream extends OutputStream {
-    emit ( compiler : ICompiler ) : Emission[] {
-        if ( this.source ) {
-            compiler.emit( this.source );
-        }
-        
-        return [];
-    }
-
     compile ( compiler : ICompiler ) : string {
-        compiler.emit( this );
-
         return '' + compiler.getInputStreamName( this );
     }
 }
@@ -95,8 +83,6 @@ export class SourceStream extends OutputStream {
     }
 
     compile ( compiler : ICompiler ) : string {
-        compiler.emit( this );
-
         return '' + compiler.getInputStreamName( this );
     }
 }
@@ -120,7 +106,7 @@ export class SelectionStream extends OutputStream {
     }
 
     compile ( compiler : ICompiler ) : string {
-        return this.parent.compile( compiler ) + ':' + this.specification;
+        return compiler.compile( this.parent ) + ':' + this.specification;
     }
 }
 

@@ -18,7 +18,7 @@ export class FilterChain implements IFilter {
     }
 
     compile ( compiler : ICompiler ) : string {
-        return this.filters.map( filter => filter.compile( compiler ) ).join( ',' );
+        return this.filters.map( filter => compiler.compile( filter ) ).join( ',' );
     }
 
     redirect ( source : Stream, redirected : Stream ) : IFilter {
