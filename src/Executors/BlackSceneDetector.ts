@@ -2,14 +2,13 @@ import { Executor } from './Executor';
 import { AsyncStream } from 'data-async-iterators';
 import { Stream } from '../Stream';
 import { ICompiler } from '../Compiler/ICompiler';
-import { Duration, DurationUnit } from '@pedromsilva/data-unit';
+import { Duration, DurationUnit } from 'data-unit';
 import { BlackDetectFilter } from '../Filters/BlackDetectFilter';
 import { FilterNamedArguments } from '../Filters/Base/Filter';
 import { ConversionExecutor, Class } from './Conversion';
 import { FFmpegProcess } from '../Utils/FFmpegProcess';
 import { Hook } from '../Utils/Hookable';
 import { Compiler } from '../Compiler/Compiler';
-import { toArray } from 'data-collectors';
 
 export interface Scene {
     start : number;

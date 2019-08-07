@@ -1,4 +1,4 @@
-import { DataUnit, DataAmount, Duration, DurationUnit } from '@pedromsilva/data-unit';
+import { DataUnit, DataAmount, Duration, DurationUnit } from 'data-unit';
 
 export const FFmpegProgressPattern = /frame=\s*(?<nframe>[0-9]+)\s+fps=\s*(?<nfps>[0-9\.]+)\s+q=(?<nq>[0-9\.-]+)\s+(L?).*(size=\s*(?<nsize>[0-9]+)(?<ssize>kB|mB|b)?\s*)?time=\s*(?<sduration>[0-9\:\.]+).*(bitrate=\s*(?<nbitrate>[0-9\.]+)(?<sbitrate>bits\/s|mbits\/s|kbits\/s)?.*)?(dup=(?<ndup>\d+)\s*)?(drop=(?<ndrop>\d+)\s*)?speed=\s*(?<nspeed>[0-9\.]+)x/;
 

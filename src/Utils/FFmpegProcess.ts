@@ -1,12 +1,10 @@
 
 import { FFmpegProgress } from './FFmpegProgress';
-// import { Future } from '@pedromsilva/data-future';
-// import { Duration } from '../../ES2017/Units';
 import { ChildProcess, spawn } from 'child_process';
 import { AsyncStream } from 'data-async-iterators';
 import { fromStream } from 'data-async-iterators/streams';
 import { Hook } from './Hookable';
-import { Duration } from '@pedromsilva/data-unit';
+import { Duration } from 'data-unit';
 
 export enum FFmpegErrorDetector {
     VerboseError = 0,
@@ -33,10 +31,6 @@ export class FFmpegProcess {
 
     protected errorMessages : string[] = [];
     
-    // protected eventsIterator : AsyncIterableSubject<FFmpegProgress> = new AsyncIterableSubject();
-
-    // events : AsyncIterable<FFmpegProgress> = this.eventsIterator;
-
     constructor ( args : string[], errorDetector ?: FFmpegErrorDetector );
     constructor ( process : ChildProcess, errorDetector ?: FFmpegErrorDetector );
     constructor ( process : ChildProcess | string[], errorDetector : FFmpegErrorDetector = FFmpegErrorDetector.Fuzzy ) {
