@@ -26,11 +26,8 @@ export class CommandExecutor extends Executor<ChildProcess> {
     }
 
     getCommandArguments () : string[] {
-        this.compiler.compile( this.streams );
-
-        const command = new CommandFragment( this.streams, this.options );
-
-        return parseSpawnArgs( this.compiler.compile( command ) );
+        
+        return parseSpawnArgs( this.toString() );
     }
 
     execute () : ChildProcess {
@@ -41,5 +38,13 @@ export class CommandExecutor extends Executor<ChildProcess> {
         } );
 
         return client;
+    }
+
+    toString () : string {
+        this.compiler.compile( this.streams );
+
+        const command = new CommandFragment( this.streams, this.options );
+
+        return this.compiler.compile( command );
     }
 }

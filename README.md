@@ -15,6 +15,7 @@ import { trim, concat, source } from "composable";
 import { color, silence } from "composable";
 import { separator } from "composable";
 import { compile, command } from "composable";
+import { ConversionExecutor } from "composable";
 
 // These will be the times we want to trim
 const times = [ [ 0, 10 ], [ 20, 30 ], [ 40, 50 ] ];
@@ -38,9 +39,18 @@ const [ sepV, sepA ] = [ () => color( 'black', 1920, 1080, 3 ), () => silence( 3
 // Adds a 3-second black scene between eahc original scene
 const [ outV, outA ] = concat( separator( video, sepV ), separator( audio, sepA ) );
 
-console.log( command( [ outV, outA ], 'C:\\generated\\file\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).generate() );
+const cmd = command( [ outV, outA ], 'C:\\generated\\file\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } );
+
+console.log( compile( cmd ).toString() );
 // Or run the command right away
-command( [ outV, outA ], 'C:\\generated\\file\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } ).execute();
+const process = new ConversionExecutor( [ outV, outA ], {
+    output: 'C:\\generated\\file\\path.mkv',
+    outputArgs: [ '-f', 'matroska', '-y' ]
+} ).execute();
+
+process.onProgress.subscribe( p => console.log( p.duration, p.percentage, p.frame, p.speed, p.time ) );
+process.onError.subscribe( e => console.error( e ) );
+process.onEnd.subscribe( () => console.log( 'ended' ) );
 ```
 
 Will result in the following output:

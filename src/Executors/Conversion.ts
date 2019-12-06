@@ -52,4 +52,10 @@ export class ConversionExecutor extends Executor<FFmpegProcess> {
 
         return process;
     }
+
+    toString () {
+        const command = new CommandExecutor( this.streams, this.options, this.compiler );
+
+        return command.toString();
+    }
 }

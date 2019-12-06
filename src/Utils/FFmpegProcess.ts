@@ -36,8 +36,6 @@ export class FFmpegProcess {
     constructor ( process : ChildProcess | string[], errorDetector : FFmpegErrorDetector = FFmpegErrorDetector.Fuzzy ) {
         if ( process instanceof Array ) {
             this.args = process;
-            
-            console.log( this.args );
         } else {
             this.process = process;
 
