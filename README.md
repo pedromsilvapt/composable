@@ -15,7 +15,7 @@ import { trim, concat, source } from "composable";
 import { color, silence } from "composable";
 import { separator } from "composable";
 import { compile, command } from "composable";
-import { ConversionExecutor } from "composable";
+import { ConversionExecutor } from "composable/executors";
 
 // These will be the times we want to trim
 const times = [ [ 0, 10 ], [ 20, 30 ], [ 40, 50 ] ];

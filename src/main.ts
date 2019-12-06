@@ -9,9 +9,6 @@ export { CommandFragment, CommandOptions, command } from './Fragments/Command';
 
 export { Stream, DynamicStream, DyanamicInputStream, OutputStream, SelectionStream } from './Stream';
 
-export { IExecutor } from './Executors/IExecutor';
-export { ConversionExecutor } from './Executors/Conversion';
-
 export { IFilter } from './Filters/Base/IFilter';
 export { NativeFilter, FilterArgument, FilterNamedArguments } from './Filters/Base/Filter';
 
