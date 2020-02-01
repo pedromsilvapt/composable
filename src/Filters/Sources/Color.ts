@@ -36,10 +36,10 @@ export class ColorSourceFilter extends NativeFilter {
     parameters : string[] = [ 'color', 'size', 'rate' ]
 }
 
-export function color ( color : string, width : number, height : number, duration : number = null ) : OutputStream {
+export function color ( color : string, width : number, height : number, duration : number = null, rate : string | number = null ) : OutputStream {
     return new ColorSourceFilter( [ color ], {
         size: '' + width + 'x' + height,
-        rate: '24000/1001',
+        rate: rate,
         duration: duration
     } ).outputs[ 0 ];
 }
