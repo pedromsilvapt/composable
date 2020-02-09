@@ -11,6 +11,7 @@ export { Stream, DynamicStream, DyanamicInputStream, OutputStream, SelectionStre
 
 export { IFilter } from './Filters/Base/IFilter';
 export { NativeFilter, FilterArgument, FilterNamedArguments } from './Filters/Base/Filter';
+export { GenericFilter, filter } from './Filters/Base/GenericFilter';
 
 export { crossfade } from './Filters/CrossfadeFilter';
 export { concat, separator } from './Filters/ConcatFilter';
