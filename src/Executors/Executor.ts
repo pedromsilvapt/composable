@@ -1,7 +1,9 @@
 import { IExecutor } from './IExecutor';
-import { Stream } from '../Stream';
-import { ICompiler } from '../Compiler/ICompiler';
+import { ICompiler } from '../Compiler';
 
+/**
+ * @category composable/executors
+ */
 export abstract class Executor<O> implements IExecutor<O> {
     protected customBinaryPath : string;
 
@@ -16,9 +18,7 @@ export abstract class Executor<O> implements IExecutor<O> {
     set binaryPath ( value : string ) {
         this.customBinaryPath = value;
     }
-    
-    abstract streams : Stream[];
-    
+        
     abstract compiler : ICompiler;
 
     abstract execute () : O;

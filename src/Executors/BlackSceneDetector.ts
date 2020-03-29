@@ -1,44 +1,50 @@
-import { Executor } from './Executor';
 import { AsyncStream } from 'data-async-iterators';
-import { Stream } from '../Stream';
-import { ICompiler } from '../Compiler/ICompiler';
 import { Duration, DurationUnit } from 'data-unit';
-import { BlackDetectFilter } from '../Filters/BlackDetectFilter';
-import { FilterNamedArguments } from '../Filters/Base/Filter';
+import { Executor } from './Executor';
+import { Stream, ICompiler, Compiler } from '../Compiler';
+import { FilterParams } from '../Filter';
+import { VideoBlackDetect } from '../Filters/Video/Filters/VideoBlackDetect';
 import { ConversionExecutor, Class } from './Conversion';
 import { FFmpegProcess } from '../Utils/FFmpegProcess';
 import { Hook } from '../Utils/Hookable';
-import { Compiler } from '../Compiler/Compiler';
+import { Output } from '../Output';
 
+/**
+ * @category composable/executors
+ */
 export interface Scene {
     start : number;
     end : number;
 }
 
+/**
+ * @category composable/executors
+ */
 export interface BlackSceneOptions {
     minDuration ?: number | Duration;
     pictureThreshold ?: number;
     pixelRatioThreshold ?: number;
 }
 
+/**
+ * @category composable/executors
+ */
 export var BlackScenePattern = /black_start:\s*(?<start>[0-9]+(\.[0-9]+)?)\s+black_end:\s*(?<end>[0-9]+(\.[0-9]+)?)/i;
 
+/**
+ * @category composable/executors
+ */
 export class BlackSceneDetector extends Executor<AsyncStream<Scene>> {
-    streams : Stream[];
+    stream : Stream;
 
     compiler : ICompiler;
 
     options : BlackSceneOptions;
 
-    public constructor ( streams : Stream | Stream[], options : BlackSceneOptions = {}, compiler : ICompiler = new Compiler() ) {
+    public constructor ( stream : Stream, options : BlackSceneOptions = {}, compiler : ICompiler = new Compiler() ) {
         super();
-        
-        if ( !( streams instanceof Array ) ) {
-            streams = [ streams ];
-        }
-        
         this.compiler = compiler;
-        this.streams = streams;
+        this.stream = stream;
         this.options = options;
     }
 
@@ -49,7 +55,7 @@ export class BlackSceneDetector extends Executor<AsyncStream<Scene>> {
             factory = BlackSceneProcess as any;
         }
 
-        const filterOptions : FilterNamedArguments = {};
+        const filterOptions : FilterParams = {};
 
         if ( typeof this.options.minDuration === 'number' ) {
             filterOptions.black_min_duration = this.options.minDuration;
@@ -65,12 +71,13 @@ export class BlackSceneDetector extends Executor<AsyncStream<Scene>> {
             filterOptions.picture_black_ratio_th = this.options.pixelRatioThreshold;
         }
 
-        const output = new BlackDetectFilter( filterOptions ).from( [ this.streams[ 0 ] ] );
+        const outStream = new VideoBlackDetect( this.stream, filterOptions );
 
-        const conversion = new ConversionExecutor( [ output.outputs[ 0 ] ], {
-            output: null,
-            outputArgs: [ '-f', 'null' ]
-        } );
+        const output = new Output( '-', [ '-f', 'null', '-map', outStream.outputs[ 0 ] ] );
+
+        this.compiler.compile( outStream, output )
+
+        const conversion = new ConversionExecutor( this.compiler );
 
         return conversion.createProcess( factory );
     }
@@ -86,6 +93,9 @@ export class BlackSceneDetector extends Executor<AsyncStream<Scene>> {
     }
 }
 
+/**
+ * @category composable/executors
+ */
 export class BlackSceneProcess extends FFmpegProcess {
     onBlackScene : Hook<Scene> = new Hook( 'onBlackScene' );
 

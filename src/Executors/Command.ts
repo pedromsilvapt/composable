@@ -1,33 +1,26 @@
 import { Executor } from './Executor';
-import { ICompiler } from '../Compiler/ICompiler';
-import { Stream } from '../Stream';
-import { Compiler } from '../Compiler/Compiler';
+import { ICompiler, Compiler } from '../Compiler';
 import { parse as parseSpawnArgs } from 'parse-spawn-args';
-import { CommandFragment, CommandOptions } from '../Fragments/Command';
 import { spawn, ChildProcess } from "child_process";
 
+/**
+ * @category composable/executors
+ */
 export class CommandExecutor extends Executor<ChildProcess> {
-    compiler: ICompiler;
+    public static execute ( compiler ?: ICompiler ) : ChildProcess {
+        return new CommandExecutor( compiler ).execute();
+    }
 
-    streams: any[];
-
-    options : Partial<CommandOptions>;
+    compiler : ICompiler;
     
-    public constructor ( streams : Stream | Stream[], options : Partial<CommandOptions> = {}, compiler : ICompiler = new Compiler() ) {
+    public constructor ( compiler : ICompiler = new Compiler() ) {
         super();
-        
-        if ( !( streams instanceof Array ) ) {
-            streams = [ streams ];
-        }
-        
+                
         this.compiler = compiler;
-        this.streams = streams;
-        this.options = options;
     }
 
     getCommandArguments () : string[] {
-        
-        return parseSpawnArgs( this.toString() );
+        return [ this.binaryPath, ...this.compiler.command.toArray() ];
     }
 
     execute () : ChildProcess {
@@ -41,10 +34,11 @@ export class CommandExecutor extends Executor<ChildProcess> {
     }
 
     toString () : string {
-        this.compiler.compile( this.streams );
+        return this.binaryPath + ' ' + this.compiler.command.toString();
+        // this.compiler.compile( this.streams );
 
-        const command = new CommandFragment( this.streams, this.options );
+        // const command = new CommandFragment( this.streams, this.options );
 
-        return this.compiler.compile( command );
+        // return this.compiler.compile( command );
     }
 }

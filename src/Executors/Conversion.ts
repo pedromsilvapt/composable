@@ -1,34 +1,31 @@
 import { Executor } from './Executor';
-import { ICompiler } from '../Compiler/ICompiler';
-import { Stream } from '../Stream';
-import { Compiler } from '../Compiler/Compiler';
-import { CommandOptions } from '../Fragments/Command';
+import { ICompiler, Compiler } from '../Compiler';
 import { CommandExecutor } from './Command';
 import { FFmpegProcess } from '../Utils/FFmpegProcess';
 
+/**
+ * @hidden
+ */
 export interface Class<T, A extends any[] = []> {
     new ( ...args : A ) : T;
 }
 
+/**
+ * @category composable/executors
+ */
 export class ConversionExecutor extends Executor<FFmpegProcess> {
+    public static execute ( compiler ?: ICompiler ) : FFmpegProcess {
+        return new ConversionExecutor( compiler ).execute();
+    }
+
     compiler: ICompiler;
-
-    streams: any[];
-
-    options : Partial<CommandOptions>;
 
     command : CommandExecutor;
     
-    public constructor ( streams : Stream | Stream[], options : Partial<CommandOptions> = {}, compiler : ICompiler = new Compiler() ) {
+    public constructor ( compiler : ICompiler = new Compiler() ) {
         super();
         
-        if ( !( streams instanceof Array ) ) {
-            streams = [ streams ];
-        }
-        
         this.compiler = compiler;
-        this.streams = streams;
-        this.options = options;
     }
 
     createProcess<T> ( factory : Class<T, [string[]]> ) : T;
@@ -37,8 +34,8 @@ export class ConversionExecutor extends Executor<FFmpegProcess> {
         if ( factory == null ) {
             factory = FFmpegProcess as any;
         }
-        
-        const command = new CommandExecutor( this.streams, this.options, this.compiler );
+
+        const command = new CommandExecutor( this.compiler );
 
         const process = new factory( command.getCommandArguments() );
 
@@ -54,7 +51,7 @@ export class ConversionExecutor extends Executor<FFmpegProcess> {
     }
 
     toString () {
-        const command = new CommandExecutor( this.streams, this.options, this.compiler );
+        const command = new CommandExecutor( this.compiler );
 
         return command.toString();
     }

@@ -2,6 +2,9 @@ import { AsyncStream, safe, AsyncIterableSubject } from 'data-async-iterators';
 import { toAsyncIterator } from 'data-async-iterators/lib/core';
 import { Semaphore } from "data-semaphore";
 
+/**
+ * @category composable/executors
+ */
 export class Hookable {
     hooks : Map<string, Hook> = new Map();
 
@@ -48,14 +51,23 @@ export class Hookable {
     }
 }
 
+/**
+ * @category composable/executors
+ */
 export interface HookSubscription<T> {
     ( arg : T ) : void | Promise<void>;
 }
 
+/**
+ * @category composable/executors
+ */
 export interface HookSubscriptionCancellation {
     () : void;
 }
 
+/**
+ * @category composable/executors
+ */
 export class Hook<T = any> {
     name : string;
 
@@ -149,6 +161,9 @@ export class Hook<T = any> {
     }
 }
 
+/**
+ * @category composable/executors
+ */
 export class HookAsyncIterator<T> extends AsyncIterableSubject<T> implements AsyncIterableIterator<T> {
     protected release : HookSubscriptionCancellation;
 

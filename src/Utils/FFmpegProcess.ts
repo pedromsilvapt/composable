@@ -6,12 +6,18 @@ import { fromStream } from 'data-async-iterators/streams';
 import { Hook } from './Hookable';
 import { Duration } from 'data-unit';
 
+/**
+ * @category composable/executors
+ */
 export enum FFmpegErrorDetector {
     VerboseError = 0,
     Fuzzy = 1,
     None = 2
 }
 
+/**
+ * @category composable/executors
+ */
 export class FFmpegProcess {
     args : string[];
 

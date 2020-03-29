@@ -1,1 +1,1 @@
-export * from './lib/executors';
+export * from './lib/Executors';

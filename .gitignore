@@ -64,3 +64,6 @@ lib/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+src/Filters/
+CodeGen/doc.html
+CodeGen/doc.json
