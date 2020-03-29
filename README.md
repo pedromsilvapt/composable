@@ -10,43 +10,38 @@ npm install --save composable
 # Usage
 Just require the filters from this module and use them.
 > **Note** This project comes with typescript definition files right out of the box. Type away!
-```javascript
-import { trim, concat, source } from "composable";
-import { color, silence } from "composable";
-import { separator } from "composable";
-import { compile, command } from "composable";
+```typescript
+import { Compiler, Input, Output, Stream } from "composable";
+import { VideoColor } from "composable/filters";
+import { TrimComposite, SilenceComposite, ConcatComposite, separator } from "composable/composites";
 import { ConversionExecutor } from "composable/executors";
 
 // These will be the times we want to trim
 const times = [ [ 0, 10 ], [ 20, 30 ], [ 40, 50 ] ];
 
-const video = [];
-const audio = [];
+const video : Stream[] = [];
+const audio : Stream[] = [];
 
-let file = source( "C:\\source\\file\\path.mkv" );
+let file = new Input( "C:\\source\\file\\path.mkv" );
 
 for ( let time of times ) {
-    const [ v, a ] = trim( file.select( 'v' ), file.select( 'a' ), time[ 0 ], time[ 1 ] );
+    const [ v, a ] = new TrimComposite( file.select( 'v' ), file.select( 'a' ), time[ 0 ], time[ 1 ] );
 
     video.push( v );
     audio.push( a );
 }
 
-
 // Note that each stream in this case needs to be a stream factory: a method that returns a stream
-const [ sepV, sepA ] = [ () => color( 'black', 1920, 1080, 3 ), () => silence( 3 ) ];
+const [ sepV, sepA ] = [ () => new VideoColor( null, { color: 'black', size: `1920x1080`, duration: 3 } ), () => new SilenceComposite( 3 ) ];
 
-// Adds a 3-second black scene between eahc original scene
-const [ outV, outA ] = concat( separator( video, sepV ), separator( audio, sepA ) );
+// Adds a 3-second black scene between each original scene
+const [ outV, outA ] = new ConcatComposite( [ separator( video, sepV ) ], [ separator( audio, sepA ) ] );
 
-const cmd = command( [ outV, outA ], 'C:\\generated\\file\\path.mkv', { outputArgs: [ '-f', 'matroska', '-y' ] } );
+const output = new Output( 'C:\\generated\\file\\path.mkv', [ '-f', 'matroska', '-v', '-map', outV, '-map', outA ] );
 
-console.log( compile( cmd ).toString() );
+console.log( new Compiler( output ).command.toString() );
 // Or run the command right away
-const process = new ConversionExecutor( [ outV, outA ], {
-    output: 'C:\\generated\\file\\path.mkv',
-    outputArgs: [ '-f', 'matroska', '-y' ]
-} ).execute();
+const process = new ConversionExecutor( new Compiler( output ) ).execute();
 
 process.onProgress.subscribe( p => console.log( p.duration, p.percentage, p.frame, p.speed, p.time ) );
 process.onError.subscribe( e => console.error( e ) );
@@ -73,62 +68,28 @@ Will result in the following output:
 Try writing that by hand!
 
 ## Streams
-The core concept of composable are streams. You give them as arguments, and you get them as outputs. This simulates the actual way ffmpeg filters work! Because most streams need a unique name that allows them to be used and connected with other filters, managing these names can be cumbersome and error-prone. Because of this, most of composable's streams are dynamic objects, references if you will, that only get assigned a unique name during compilation.
+The core concept of composable are streams. You give them as arguments, and you get them as outputs. This simulates the actual way ffmpeg filters work! Because most streams need a unique name that allows them to be used and connected with other filters, managing these names manually can be cumbersome and error-prone. Because of this, most of composable's streams are dynamic objects, references if you will, that only get assigned a unique name during compilation.
+
+Most places that accept a string expect one of three things: a `string` (treated as a static stream name), a `Filter` (refers to the first output stream of that filter), or an actual `StreamRef` instance.
+
+## Fragments
+A command is composed of fragments: these can range from an `Input`, a `Stream`, a `Filter`, a `Composite`, to an `Output`. When a fragment depends on another (like an output that depends on a filter, or a filter depends a stream), it is responsible for compiling any and all of it's dependencies. This means that there is no need to manually compile every fragment of the command, just it's tails (usually it's outputs).
 
 ## Filters
-Every filter offers a functional API to keep things simple and clean. On the inside, however, every filter is a class that contains all the information it needs. Because most functions in the public API return the streams outputed by the filter, and not the filter itself, there is a handy attribute on every stream called `source` that gives access to the filter that originated that stream.
+The submodule `composable/filters` contains a list of classes and functions for a huge variety of filters generated automatically based on the online documentation of ffmpeg. However, it is possible to use any filter we want, event if it is not on that list, by using the `Filter` class (or `filter` function) and passing them their inputs, filter name, parameters (if any), and how many output streams the filter creates (if different than 1).
 
-## API
-### trim
-> trim ( video : Stream, audio : Stream, start : number, end : number ) : [ Stream, Stream ];
+# Composites
+Composites are similar to filters - indeed, they can be used anywhere a normal filter can inside our library. The difference lies in that instead of compiling into an actual discrite filter, they can be seen as blueprints for one or more filters.
 
-Trims the video and audio at the same time, beginning at `start` and ending at `end`;
+That is, they are like virtual filters that can generate dinamically the filtergraph for them depending on their input. They can be created by extending the `Composite` class and implementing the `compose()` and `clone()` methods, or by simply calling the `composite()` function and passing it a `compose` lambda as an argument.
 
-### source
-> source ( file : string ) : SourceStream;
+There are already some useful composites under the submodule `composable/composites`, but you are free to create your very own!
 
-Returns a stream that comes from a file source.
+# Compiler
+Finally, all pieces fit together with the compiler, that's responsible for creating the actual command from all of it's fragments. A compiler can be created with it's fragments `const compiler = new Compiler( output1, output2 )`, or these can be added after the compiler is created through the method `compiler.compile( output1, output2 )`.
 
-### concat
-> concat ( videos : Stream[], audios : Stream[] ) : [ Stream, Stream ];
+When all the fragments are compiled, the resulting command can be obtained as an array of arguments from the expression `compiler.command.toArray()` or as a string from the expression `compiler.command.toString()`.
 
-Receives a list of videos and a list of audios, and concatenates them in order.
-
-### boxblur
-> export function boxblur ( input : Stream, named ?: FilterNamedArguments ) : OutputStream;
-
-> export function boxblur ( input : Stream, positional : FilterArgument[], named ?: FilterNamedArguments ) : OutputStream;
-
-Blurs a given video stream.
-
-#### Example
-Blur a video between 5 and 15 seconds.
-```typescript
-video = boxblur( video, { luma_radius: 60, enable: `'between(t,5,15)'` } );
-```
-
-### blackout
-> export function blackout ( input : Stream, width : number, height : number, start : number, end : number ) : OutputStream;
-
-Receives a video stream and covers it with a black screen for the specified duration.
-
-### color
-> color ( color : string, width : number, height : number, duration ?: number ) : OutputStream;
-
-Returns a video stream with the specified resolution, with nothing more than the background color for the specified duration.
-
-### silence
-> silence ( duration ?: number ) : OutputStream;
-
-Returns a silent audio stream with an optional duration.
-
-### mute
-> export function mute ( input : Stream, start : number, end : number ) : OutputStream;
-
-Receives an audio stream and mutes a specific part of it.
-
-## command
-> command( streams : Stream[], output ?: string, options ?: Partial<CommandOptions> ) : CommandFragment
-
-Generates a command fragment that can be used to output the command as a string, using the `generate()` method, or can
-run the command right away in a child_process using `execute()`. Executing returns a NodeJs.ReadableStream containing the `stdout` of the process.
+# Executors
+Executors (available through `composable/executors`) are handy tools that simplify the process of actually calling ffmpeg with the generated command. Instead of having to mess around with the `child_process` module, executors do it all in the background. There can be different executors, from the `ConversionExecutor` (that handles converting one or more inputs into one or more outputs) to the `BlackSceneDetector` that automatically parses the output from the `blackdetect` filter.
+ > **Warning:** This part of the library is still experimental and only works in node. Calling it in a browser will result in an error.

@@ -1,9 +1,9 @@
-import { Stream } from '../Stream';
-import { ICompiler } from '../Compiler/ICompiler';
+import { ICompiler } from '../Compiler';
 
+/**
+ * @category composable/executors
+ */
 export interface IExecutor<O> {
-    streams : Stream[];
-
     compiler : ICompiler;
 
     binaryPath : string;

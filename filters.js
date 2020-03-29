@@ -1,1 +1,1 @@
-module.exports = require( './lib/filters' );
+module.exports = require( './lib/Filters' );

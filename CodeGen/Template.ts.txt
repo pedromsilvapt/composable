@@ -1,0 +1,22 @@
+import { Filter, FilterStreamRef } from '{{SourcePath}}/Filter';
+import { Stream } from '{{SourcePath}}/Compiler';
+
+{{TemplateNameDescription}}
+export class {{TemplateName}} extends Filter<{{TemplateName}}Parameters> {
+    outputs : FilterStreamRef<{{TemplateName}}Parameters, {{TemplateName}}>[];
+
+    public constructor ( inputs : Stream | Stream[] = [], parameters : {{TemplateName}}Parameters = {} as any ) {
+        super( inputs, '{{name}}', parameters );
+    }{{members}}
+}
+
+export interface {{TemplateName}}Parameters {
+{{Parameters}}
+
+    [key : string] : string | number;
+}
+
+{{TemplateNameDescription}}
+export function {{TemplateNameCamelCase}} ( inputs : Stream | Stream[] = [], parameters : {{TemplateName}}Parameters = {} as any ) {
+    return new {{TemplateName}}( inputs, parameters );
+}

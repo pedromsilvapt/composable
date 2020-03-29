@@ -1,0 +1,4927 @@
+{
+    "bandpass": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBandpass"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBandPass"
+        }
+    ],
+    "bandreject": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBandreject"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBandReject"
+        }
+    ],
+    "bass": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "biquad": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBiquad"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBiQuad"
+        }
+    ],
+    "bs2b": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "channelmap": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioChannelmap"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioChannelMap"
+        }
+    ],
+    "channelsplit": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioChannelsplit"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioChannelSplit"
+        }
+    ],
+    "chorus": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "compand": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "compensationdelay": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCompensationdelay"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCompensationDelay"
+        }
+    ],
+    "acompressor": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "acontrast": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "acopy": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "acrossfade": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCrossfade"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCrossFade"
+        }
+    ],
+    "crossfeed": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCrossfeed"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCrossFeed"
+        }
+    ],
+    "acrossover": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCrossover"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCrossOver"
+        }
+    ],
+    "acrusher": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "crystalizer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "acue": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "dcshift": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDcshift"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDcShift"
+        }
+    ],
+    "adeclick": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDeclick"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDeClick"
+        }
+    ],
+    "adeclip": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDeclip"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDeClip"
+        }
+    ],
+    "deesser": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "adelay": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aderivative": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "drmeter": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDrmeter"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDrMeter"
+        }
+    ],
+    "dynaudnorm": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDynaudnorm"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDynAudNorm"
+        }
+    ],
+    "earwax": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aecho": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aemphasis": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "equalizer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aeval": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "extrastereo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioExtrastereo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioExtraStereo"
+        }
+    ],
+    "afade": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "afftdn": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioFftdn"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioFftDn"
+        }
+    ],
+    "afftfilt": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioFftfilt"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioFftFilt"
+        }
+    ],
+    "afir": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "firequalizer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioFirequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioFirEqualizer"
+        }
+    ],
+    "flanger": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aformat": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "agate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "haas": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "hdcd": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "headphone": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "highpass": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioHighpass"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioHighPass"
+        }
+    ],
+    "highshelf": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aiir": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aintegral": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "join": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "ladspa": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "alimiter": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "allpass": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aloop": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "loudnorm": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioLoudnorm"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioLoudNorm"
+        }
+    ],
+    "lowpass": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioLowpass"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioLowPass"
+        }
+    ],
+    "lowshelf": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "lv2": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "mcompand": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioMcompand"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioMCompAnd"
+        }
+    ],
+    "amerge": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "amix": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "amultiply": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "anequalizer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNEqualizer"
+        }
+    ],
+    "anlmdn": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "anlms": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "anull": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "apad": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "pan": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aphaser": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "apulsator": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "replaygain": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioReplaygain"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioReplayGain"
+        }
+    ],
+    "aresample": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "areverse": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "arnndn": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "rubberband": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "asetnsamples": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSetnsamples"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSetNSamples"
+        }
+    ],
+    "asetrate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSetrate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSetRate"
+        }
+    ],
+    "ashowinfo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioShowinfo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioShowInfo"
+        }
+    ],
+    "sidechaincompress": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSidechaincompress"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSideChainCompress"
+        }
+    ],
+    "sidechaingate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSidechaingate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSideChainGate"
+        }
+    ],
+    "silencedetect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSilencedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSilenceDetect"
+        }
+    ],
+    "silenceremove": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSilenceremove"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSilenceRemove"
+        }
+    ],
+    "sofalizer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSofalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSOFAlizer"
+        }
+    ],
+    "asoftclip": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSoftclip"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSoftClip"
+        }
+    ],
+    "asr": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "astats": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "stereotools": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioStereotools"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioStereoTools"
+        }
+    ],
+    "stereowiden": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioStereowiden"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioStereoWiden"
+        }
+    ],
+    "superequalizer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSuperequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSuperEqualizer"
+        }
+    ],
+    "surround": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "atempo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "treble": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "tremolo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "atrim": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "vibrato": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "volume": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "volumedetect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioVolumedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioVolumeDetect"
+        }
+    ],
+    "axcorrelate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioXcorrelate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioXCorrelate"
+        }
+    ],
+    "abuffersink": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBuffersink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBufferSink"
+        }
+    ],
+    "anullsink": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNullsink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNullSink"
+        }
+    ],
+    "abuffer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aevalsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioEvalsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioEvalSrc"
+        }
+    ],
+    "flite": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "hilbert": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "anoisesrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNoisesrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNoiseSrc"
+        }
+    ],
+    "anullsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNullsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNullSrc"
+        }
+    ],
+    "sinc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "sine": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "abench": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "abitscope": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Abitscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ABitScope"
+        }
+    ],
+    "adrawgraph": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Adrawgraph"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ADrawGraph"
+        }
+    ],
+    "agraphmonitor": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Agraphmonitor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AGraphMonitor"
+        }
+    ],
+    "ahistogram": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Ahistogram"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AHistogram"
+        }
+    ],
+    "ainterleave": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "ametadata": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aperms": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aphasemeter": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Aphasemeter"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "APhaseMeter"
+        }
+    ],
+    "arealtime": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "aselect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Aselect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSelect"
+        }
+    ],
+    "asendcmd": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "asetpts": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "asettb": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "asidedata": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "asplit": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "avectorscope": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Avectorscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AVectorScope"
+        }
+    ],
+    "azmq": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "bench": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "concat": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": [
+                "public getOutputCount() {\n    const v = this.getParameter<number>('v', 1);\n    const a = this.getParameter<number>('a', 0);\n    return v + a;\n}"
+            ]
+        }
+    ],
+    "ebur128": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "interleave": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "metadata": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "perms": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "realtime": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "select": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Select"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSelect"
+        }
+    ],
+    "sendcmd": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "setpts": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "setrange": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Setrange"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "SetRange"
+        }
+    ],
+    "settb": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "showcqt": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showcqt"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowCqt"
+        }
+    ],
+    "showfreqs": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showfreqs"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowFreqs"
+        }
+    ],
+    "showspatial": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showspatial"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowSpatial"
+        }
+    ],
+    "showspectrum": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showspectrum"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowSpectrum"
+        }
+    ],
+    "showspectrumpic": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showspectrumpic"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowSpectrumPic"
+        }
+    ],
+    "showvolume": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showvolume"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowVolume"
+        }
+    ],
+    "showwaves": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showwaves"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowWaves"
+        }
+    ],
+    "showwavespic": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showwavespic"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowWavesPic"
+        }
+    ],
+    "sidedata": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "spectrumsynth": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Spectrumsynth"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "SpectrumSynth"
+        }
+    ],
+    "split": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "zmq": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "amovie": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Amovie"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioMovie"
+        }
+    ],
+    "movie": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "v360": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "addroi": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAddroi"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAddRoi"
+        }
+    ],
+    "afifo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "vaguedenoiser": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAguedenoiser"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAgueDenoiser"
+        }
+    ],
+    "alphaextract": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAlphaextract"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAlphaExtract"
+        }
+    ],
+    "alphamerge": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAlphamerge"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAlphaMerge"
+        }
+    ],
+    "amplify": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "ass": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "astreamselect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "atadenoise": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAtadenoise"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAtaDenoise"
+        }
+    ],
+    "avgblur": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAvgblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAvgBlur"
+        }
+    ],
+    "bbox": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBbox"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBBox"
+        }
+    ],
+    "bilateral": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "bitplanenoise": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBitplanenoise"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBitPlaneNoise"
+        }
+    ],
+    "blackdetect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBlackdetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBlackDetect"
+        }
+    ],
+    "blackframe": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBlackframe"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBlackFrame"
+        }
+    ],
+    "blend": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "bm3d": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBm3d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBm3D"
+        }
+    ],
+    "boxblur": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBoxblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBoxBlur"
+        }
+    ],
+    "bwdif": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "chromahold": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoChromahold"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoChromaHold"
+        }
+    ],
+    "chromakey": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoChromakey"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoChromaKey"
+        }
+    ],
+    "chromashift": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoChromashift"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoChromaShift"
+        }
+    ],
+    "ciescope": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCiescope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCIEScope"
+        }
+    ],
+    "codecview": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCodecview"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCodecView"
+        }
+    ],
+    "colorbalance": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorbalance"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorBalance"
+        }
+    ],
+    "colorchannelmixer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorchannelmixer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorChannelMixer"
+        }
+    ],
+    "colorhold": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorhold"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorHold"
+        }
+    ],
+    "colorkey": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorkey"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorKey"
+        }
+    ],
+    "colorlevels": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorlevels"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorLevels"
+        }
+    ],
+    "colormatrix": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColormatrix"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorMatrix"
+        }
+    ],
+    "colorspace": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorspace"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorSpace"
+        }
+    ],
+    "convolution": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "convolve": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "copy": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "coreimage": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCoreimage"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCoreImage"
+        }
+    ],
+    "cover_rect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCover_rect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCoverRect"
+        }
+    ],
+    "crop": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "cropdetect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCropdetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCropDetect"
+        }
+    ],
+    "cue": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "curves": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "datascope": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDatascope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDataScope"
+        }
+    ],
+    "dctdnoiz": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDctdnoiz"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDctDenoiz"
+        }
+    ],
+    "deband": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "deblock": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "decimate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "deconvolve": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "dedot": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "deflate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "deflicker": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "dejudder": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "delogo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "derain": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "deshake": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "despill": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "detelecine": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "dilation": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "displace": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "dnn_processing": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDnn_processing"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDnnProcessing"
+        }
+    ],
+    "doubleweave": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "drawbox": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawbox"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawBox"
+        }
+    ],
+    "drawgrid": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawgrid"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawGrid"
+        }
+    ],
+    "drawgraph": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawgraph"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawHraph"
+        }
+    ],
+    "drawtext": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawtext"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawText"
+        }
+    ],
+    "edgedetect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoEdgedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoEdgeDetect"
+        }
+    ],
+    "elbg": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "entropy": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "eq": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "erosion": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "extractplanes": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoExtractplanes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoExtractPlanes"
+        }
+    ],
+    "fade": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "fftdnoiz": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFftdnoiz"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFftDenoiz"
+        }
+    ],
+    "fftfilt": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFftfilt"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFftFilt"
+        }
+    ],
+    "field": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "fieldhint": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFieldhint"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFieldHint"
+        }
+    ],
+    "fieldmatch": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFieldmatch"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFieldMatch"
+        }
+    ],
+    "fieldorder": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFieldorder"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFieldOrder"
+        }
+    ],
+    "fifo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "fillborders": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFillborders"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFillBorders"
+        }
+    ],
+    "find_rect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFind_rect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFindRect"
+        }
+    ],
+    "vflip": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "floodfill": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "format": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "fps": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "framepack": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFramepack"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFramePack"
+        }
+    ],
+    "framerate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "vfrdet": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFrdet"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFramerateDet"
+        }
+    ],
+    "framestep": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFramestep"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFrameStep"
+        }
+    ],
+    "freezedetect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFreezedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFreezeDetect"
+        }
+    ],
+    "freezeframes": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFreezeframes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFreezeFrames"
+        }
+    ],
+    "frei0r": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "fspp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "gblur": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGBlur"
+        }
+    ],
+    "geq": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "gradfun": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGradfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGradFun"
+        }
+    ],
+    "graphmonitor": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGraphmonitor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGraphMonitor"
+        }
+    ],
+    "greyedge": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGreyedge"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGreyEdge"
+        }
+    ],
+    "haldclut": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHaldclut"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHaldCLUT"
+        }
+    ],
+    "hflip": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHflip"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHFlip"
+        }
+    ],
+    "histeq": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "histogram": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "hqdn3d": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "hqx": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "hstack": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHstack"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHStack"
+        }
+    ],
+    "hue": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "hwdownload": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwdownload"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwDownload"
+        }
+    ],
+    "hwmap": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwmap"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwMap"
+        }
+    ],
+    "hwupload": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwupload"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwUpload"
+        }
+    ],
+    "hwupload_cuda": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwupload_cuda"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwUploadCuda"
+        }
+    ],
+    "hysteresis": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "vibrance": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "vidstabdetect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIdstabdetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoIdStabDetect"
+        }
+    ],
+    "vidstabtransform": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIdstabtransform"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoIdStabTransform"
+        }
+    ],
+    "il": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "inflate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "interlace": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "idet": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIdet"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoInterlacingDetect"
+        }
+    ],
+    "kerndeint": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoKerndeint"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoKernelDeinterling"
+        }
+    ],
+    "lagfun": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLagfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLagFun"
+        }
+    ],
+    "lenscorrection": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLenscorrection"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLensCorrection"
+        }
+    ],
+    "lensfun": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLensfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLensFun"
+        }
+    ],
+    "libvmaf": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLibvmaf"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLibVMAF"
+        }
+    ],
+    "limiter": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "loop": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "lumakey": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLumakey"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLumaKey"
+        }
+    ],
+    "lut": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "lut1d": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLut1d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLut1D"
+        }
+    ],
+    "lut2": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "lut3d": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLut3d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLut3D"
+        }
+    ],
+    "lutrgb": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "lutyuv": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "maskedclamp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedclamp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedClamp"
+        }
+    ],
+    "maskedmax": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedmax"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedMax"
+        }
+    ],
+    "maskedmerge": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedmerge"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedMerge"
+        }
+    ],
+    "maskedmin": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedmin"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedMin"
+        }
+    ],
+    "maskfun": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskFun"
+        }
+    ],
+    "median": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "mergeplanes": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMergeplanes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMergePlanes"
+        }
+    ],
+    "midequalizer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMidequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMidEqualizer"
+        }
+    ],
+    "mix": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "mcdeint": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMcdeint"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMotionCompDeint"
+        }
+    ],
+    "mestimate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMestimate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMotionEstimate"
+        }
+    ],
+    "minterpolate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMinterpolate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMotionInterpolate"
+        }
+    ],
+    "mpdecimate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMpdecimate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMpDecimate"
+        }
+    ],
+    "negate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "nlmeans": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoNlmeans"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoNlMeans"
+        }
+    ],
+    "nnedi": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "noformat": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoNoformat"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoNoFormat"
+        }
+    ],
+    "noise": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "normalize": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "null": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "ocr": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "ocv": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "oscilloscope": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "overlay": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "owdenoise": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoOwdenoise"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoOwDenoise"
+        }
+    ],
+    "pad": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "palettegen": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPalettegen"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPaletteGen"
+        }
+    ],
+    "paletteuse": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPaletteuse"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPaletteUse"
+        }
+    ],
+    "perspective": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "phase": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "photosensitivity": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPhotosensitivity"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPhotoSensitivity"
+        }
+    ],
+    "pixdesctest": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPixdesctest"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPixDescTest"
+        }
+    ],
+    "pixscope": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPixscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPixScope"
+        }
+    ],
+    "pp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPostProc"
+        }
+    ],
+    "pp7": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPp7"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPostProc7"
+        }
+    ],
+    "premultiply": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPremultiply"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPreMultiply"
+        }
+    ],
+    "prewitt": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "pseudocolor": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPseudocolor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPseudoColor"
+        }
+    ],
+    "psnr": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "pullup": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "qp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "random": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "readeia608": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "readvitc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoReadvitc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoReadVitc"
+        }
+    ],
+    "remap": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "removegrain": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRemovegrain"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRemoveGrain"
+        }
+    ],
+    "removelogo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRemovelogo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRemoveLogo"
+        }
+    ],
+    "repeatfields": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRepeatfields"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRepeatFields"
+        }
+    ],
+    "reverse": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "rgbashift": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRgbashift"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRgbaShift"
+        }
+    ],
+    "roberts": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "rotate": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "sab": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "scale": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "scale2ref": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoScale2ref"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoScale2Ref"
+        }
+    ],
+    "scale_npp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoScale_npp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoScaleNpp"
+        }
+    ],
+    "scroll": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "selectivecolor": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSelectivecolor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSelectiveColor"
+        }
+    ],
+    "separatefields": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSeparatefields"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSeparateFields"
+        }
+    ],
+    "setdar": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "setfield": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSetfield"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSetField"
+        }
+    ],
+    "setparams": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSetparams"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSetParams"
+        }
+    ],
+    "setsar": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "showinfo": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShowinfo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShowInfo"
+        }
+    ],
+    "showpalette": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShowpalette"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShowPalette"
+        }
+    ],
+    "shuffleframes": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShuffleframes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShuffleFrames"
+        }
+    ],
+    "shuffleplanes": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShuffleplanes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShufflePlanes"
+        }
+    ],
+    "signalstats": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSignalstats"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSignalStats"
+        }
+    ],
+    "signature": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "smartblur": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSmartblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSmartBlur"
+        }
+    ],
+    "sobel": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "spp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "sr": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "ssim": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "vstack": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "stereo3d": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoStereo3d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoStereo3D"
+        }
+    ],
+    "streamselect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "subtitles": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "super2xsai": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSuper2xsai"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSuper2xSaI"
+        }
+    ],
+    "swaprect": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSwaprect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSwapRect"
+        }
+    ],
+    "swapuv": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSwapuv"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSwapUV"
+        }
+    ],
+    "tblend": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "telecine": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "thistogram": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "threshold": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "thumbnail": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "tile": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "tinterlace": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "tlut2": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "tmix": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTmix"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoTMix"
+        }
+    ],
+    "tonemap": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTonemap"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoToneMap"
+        }
+    ],
+    "tpad": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTpad"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoTPad"
+        }
+    ],
+    "transpose": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "transpose_npp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTranspose_npp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoTransposeNpp"
+        }
+    ],
+    "trim": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "unpremultiply": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoUnpremultiply"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoUnPreMultiply"
+        }
+    ],
+    "unsharp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoUnsharp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoUnSharp"
+        }
+    ],
+    "uspp": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "vectorscope": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoEctorscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoVectorScope"
+        }
+    ],
+    "vignette": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIgnette"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoVignette"
+        }
+    ],
+    "vmafmotion": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMafmotion"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoVmafMotion"
+        }
+    ],
+    "w3fdif": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "waveform": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "weave": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "xbr": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "xfade": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoXfade"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoXFade"
+        }
+    ],
+    "xmedian": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoXmedian"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoXMedian"
+        }
+    ],
+    "xstack": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoXstack"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoXStack"
+        }
+    ],
+    "yadif": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "yadif_cuda": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoYadif_cuda"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoYadifCuda"
+        }
+    ],
+    "yaepblur": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoYaepblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoYaepBlur"
+        }
+    ],
+    "zoompan": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoZoompan"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoZoomPan"
+        }
+    ],
+    "zscale": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoZscale"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoZScale"
+        }
+    ],
+    "buffersink": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBuffersink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBufferSink"
+        }
+    ],
+    "nullsink": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoNullsink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoNullSink"
+        }
+    ],
+    "allrgb": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "allyuv": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "buffer": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "cellauto": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCellauto"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCellAuto"
+        }
+    ],
+    "color": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "coreimagesrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCoreimagesrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCoreImageSrc"
+        }
+    ],
+    "frei0r_src": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFrei0r_src"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFrei0rSrc"
+        }
+    ],
+    "haldclutsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "life": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "mandelbrot": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "mptestsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMptestsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMpTestSrc"
+        }
+    ],
+    "nullsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "openclsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        },
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoOpenclsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoOpenCLSrc"
+        }
+    ],
+    "pal100bars": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "pal75bars": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "rgbtestsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "sierpinski": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "smptebars": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "smptehdbars": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "testsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "testsrc2": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ],
+    "yuvtestsrc": [
+        {
+            "op": "add",
+            "path": "/members",
+            "value": []
+        }
+    ]
+}

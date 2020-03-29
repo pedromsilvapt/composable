@@ -1,0 +1,2366 @@
+{
+    "bandpass": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBandpass"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBandPass"
+        }
+    ],
+    "bandreject": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBandreject"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBandReject"
+        }
+    ],
+    "biquad": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBiquad"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBiQuad"
+        }
+    ],
+    "channelmap": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioChannelmap"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioChannelMap"
+        }
+    ],
+    "channelsplit": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioChannelsplit"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioChannelSplit"
+        }
+    ],
+    "compensationdelay": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCompensationdelay"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCompensationDelay"
+        }
+    ],
+    "acrossfade": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCrossfade"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCrossFade"
+        }
+    ],
+    "crossfeed": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCrossfeed"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCrossFeed"
+        }
+    ],
+    "acrossover": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioCrossover"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioCrossOver"
+        }
+    ],
+    "dcshift": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDcshift"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDcShift"
+        }
+    ],
+    "adeclick": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDeclick"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDeClick"
+        }
+    ],
+    "adeclip": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDeclip"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDeClip"
+        }
+    ],
+    "drmeter": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDrmeter"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDrMeter"
+        }
+    ],
+    "dynaudnorm": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioDynaudnorm"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioDynAudNorm"
+        }
+    ],
+    "extrastereo": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioExtrastereo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioExtraStereo"
+        }
+    ],
+    "afftdn": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioFftdn"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioFftDn"
+        }
+    ],
+    "afftfilt": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioFftfilt"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioFftFilt"
+        }
+    ],
+    "firequalizer": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioFirequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioFirEqualizer"
+        }
+    ],
+    "highpass": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioHighpass"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioHighPass"
+        }
+    ],
+    "loudnorm": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioLoudnorm"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioLoudNorm"
+        }
+    ],
+    "lowpass": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioLowpass"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioLowPass"
+        }
+    ],
+    "mcompand": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioMcompand"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioMCompAnd"
+        }
+    ],
+    "anequalizer": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNEqualizer"
+        }
+    ],
+    "replaygain": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioReplaygain"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioReplayGain"
+        }
+    ],
+    "asetnsamples": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSetnsamples"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSetNSamples"
+        }
+    ],
+    "asetrate": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSetrate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSetRate"
+        }
+    ],
+    "ashowinfo": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioShowinfo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioShowInfo"
+        }
+    ],
+    "sidechaincompress": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSidechaincompress"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSideChainCompress"
+        }
+    ],
+    "sidechaingate": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSidechaingate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSideChainGate"
+        }
+    ],
+    "silencedetect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSilencedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSilenceDetect"
+        }
+    ],
+    "silenceremove": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSilenceremove"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSilenceRemove"
+        }
+    ],
+    "sofalizer": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSofalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSOFAlizer"
+        }
+    ],
+    "asoftclip": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSoftclip"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSoftClip"
+        }
+    ],
+    "stereotools": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioStereotools"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioStereoTools"
+        }
+    ],
+    "stereowiden": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioStereowiden"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioStereoWiden"
+        }
+    ],
+    "superequalizer": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioSuperequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioSuperEqualizer"
+        }
+    ],
+    "volumedetect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioVolumedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioVolumeDetect"
+        }
+    ],
+    "axcorrelate": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioXcorrelate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioXCorrelate"
+        }
+    ],
+    "abuffersink": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioBuffersink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioBufferSink"
+        }
+    ],
+    "anullsink": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNullsink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNullSink"
+        }
+    ],
+    "aevalsrc": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioEvalsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioEvalSrc"
+        }
+    ],
+    "anoisesrc": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNoisesrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNoiseSrc"
+        }
+    ],
+    "anullsrc": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "AudioNullsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioNullSrc"
+        }
+    ],
+    "abitscope": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Abitscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ABitScope"
+        }
+    ],
+    "adrawgraph": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Adrawgraph"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ADrawGraph"
+        }
+    ],
+    "agraphmonitor": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Agraphmonitor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AGraphMonitor"
+        }
+    ],
+    "ahistogram": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Ahistogram"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AHistogram"
+        }
+    ],
+    "aphasemeter": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Aphasemeter"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "APhaseMeter"
+        }
+    ],
+    "avectorscope": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Avectorscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AVectorScope"
+        }
+    ],
+    "setrange": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Setrange"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "SetRange"
+        }
+    ],
+    "showcqt": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showcqt"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowCqt"
+        }
+    ],
+    "showfreqs": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showfreqs"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowFreqs"
+        }
+    ],
+    "showspatial": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showspatial"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowSpatial"
+        }
+    ],
+    "showspectrum": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showspectrum"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowSpectrum"
+        }
+    ],
+    "showspectrumpic": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showspectrumpic"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowSpectrumPic"
+        }
+    ],
+    "showvolume": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showvolume"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowVolume"
+        }
+    ],
+    "showwaves": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showwaves"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowWaves"
+        }
+    ],
+    "showwavespic": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Showwavespic"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "ShowWavesPic"
+        }
+    ],
+    "spectrumsynth": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Spectrumsynth"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "SpectrumSynth"
+        }
+    ],
+    "amovie": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "Amovie"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "AudioMovie"
+        }
+    ],
+    "addroi": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAddroi"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAddRoi"
+        }
+    ],
+    "vaguedenoiser": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAguedenoiser"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAgueDenoiser"
+        }
+    ],
+    "alphaextract": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAlphaextract"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAlphaExtract"
+        }
+    ],
+    "alphamerge": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAlphamerge"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAlphaMerge"
+        }
+    ],
+    "atadenoise": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAtadenoise"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAtaDenoise"
+        }
+    ],
+    "avgblur": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoAvgblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoAvgBlur"
+        }
+    ],
+    "bbox": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBbox"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBBox"
+        }
+    ],
+    "bitplanenoise": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBitplanenoise"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBitPlaneNoise"
+        }
+    ],
+    "blackdetect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBlackdetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBlackDetect"
+        }
+    ],
+    "blackframe": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBlackframe"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBlackFrame"
+        }
+    ],
+    "bm3d": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBm3d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBm3D"
+        }
+    ],
+    "boxblur": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBoxblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBoxBlur"
+        }
+    ],
+    "chromahold": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoChromahold"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoChromaHold"
+        }
+    ],
+    "chromakey": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoChromakey"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoChromaKey"
+        }
+    ],
+    "chromashift": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoChromashift"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoChromaShift"
+        }
+    ],
+    "ciescope": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCiescope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCIEScope"
+        }
+    ],
+    "codecview": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCodecview"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCodecView"
+        }
+    ],
+    "colorbalance": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorbalance"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorBalance"
+        }
+    ],
+    "colorchannelmixer": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorchannelmixer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorChannelMixer"
+        }
+    ],
+    "colorhold": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorhold"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorHold"
+        }
+    ],
+    "colorkey": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorkey"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorKey"
+        }
+    ],
+    "colorlevels": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorlevels"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorLevels"
+        }
+    ],
+    "colormatrix": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColormatrix"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorMatrix"
+        }
+    ],
+    "colorspace": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoColorspace"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoColorSpace"
+        }
+    ],
+    "coreimage": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCoreimage"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCoreImage"
+        }
+    ],
+    "cover_rect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCover_rect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCoverRect"
+        }
+    ],
+    "cropdetect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCropdetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCropDetect"
+        }
+    ],
+    "datascope": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDatascope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDataScope"
+        }
+    ],
+    "dctdnoiz": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDctdnoiz"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDctDenoiz"
+        }
+    ],
+    "dnn_processing": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDnn_processing"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDnnProcessing"
+        }
+    ],
+    "drawbox": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawbox"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawBox"
+        }
+    ],
+    "drawgrid": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawgrid"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawGrid"
+        }
+    ],
+    "drawgraph": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawgraph"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawHraph"
+        }
+    ],
+    "drawtext": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoDrawtext"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoDrawText"
+        }
+    ],
+    "edgedetect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoEdgedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoEdgeDetect"
+        }
+    ],
+    "extractplanes": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoExtractplanes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoExtractPlanes"
+        }
+    ],
+    "fftdnoiz": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFftdnoiz"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFftDenoiz"
+        }
+    ],
+    "fftfilt": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFftfilt"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFftFilt"
+        }
+    ],
+    "fieldhint": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFieldhint"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFieldHint"
+        }
+    ],
+    "fieldmatch": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFieldmatch"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFieldMatch"
+        }
+    ],
+    "fieldorder": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFieldorder"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFieldOrder"
+        }
+    ],
+    "fillborders": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFillborders"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFillBorders"
+        }
+    ],
+    "find_rect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFind_rect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFindRect"
+        }
+    ],
+    "framepack": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFramepack"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFramePack"
+        }
+    ],
+    "vfrdet": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFrdet"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFramerateDet"
+        }
+    ],
+    "framestep": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFramestep"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFrameStep"
+        }
+    ],
+    "freezedetect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFreezedetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFreezeDetect"
+        }
+    ],
+    "freezeframes": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFreezeframes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFreezeFrames"
+        }
+    ],
+    "gblur": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGBlur"
+        }
+    ],
+    "gradfun": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGradfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGradFun"
+        }
+    ],
+    "graphmonitor": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGraphmonitor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGraphMonitor"
+        }
+    ],
+    "greyedge": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoGreyedge"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoGreyEdge"
+        }
+    ],
+    "haldclut": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHaldclut"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHaldCLUT"
+        }
+    ],
+    "hflip": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHflip"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHFlip"
+        }
+    ],
+    "hstack": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHstack"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHStack"
+        }
+    ],
+    "hwdownload": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwdownload"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwDownload"
+        }
+    ],
+    "hwmap": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwmap"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwMap"
+        }
+    ],
+    "hwupload": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwupload"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwUpload"
+        }
+    ],
+    "hwupload_cuda": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoHwupload_cuda"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoHwUploadCuda"
+        }
+    ],
+    "vidstabdetect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIdstabdetect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoIdStabDetect"
+        }
+    ],
+    "vidstabtransform": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIdstabtransform"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoIdStabTransform"
+        }
+    ],
+    "idet": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIdet"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoInterlacingDetect"
+        }
+    ],
+    "kerndeint": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoKerndeint"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoKernelDeinterling"
+        }
+    ],
+    "lagfun": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLagfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLagFun"
+        }
+    ],
+    "lenscorrection": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLenscorrection"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLensCorrection"
+        }
+    ],
+    "lensfun": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLensfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLensFun"
+        }
+    ],
+    "libvmaf": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLibvmaf"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLibVMAF"
+        }
+    ],
+    "lumakey": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLumakey"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLumaKey"
+        }
+    ],
+    "lut1d": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLut1d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLut1D"
+        }
+    ],
+    "lut3d": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoLut3d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoLut3D"
+        }
+    ],
+    "maskedclamp": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedclamp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedClamp"
+        }
+    ],
+    "maskedmax": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedmax"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedMax"
+        }
+    ],
+    "maskedmerge": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedmerge"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedMerge"
+        }
+    ],
+    "maskedmin": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedmin"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskedMin"
+        }
+    ],
+    "maskfun": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMaskfun"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMaskFun"
+        }
+    ],
+    "mergeplanes": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMergeplanes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMergePlanes"
+        }
+    ],
+    "midequalizer": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMidequalizer"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMidEqualizer"
+        }
+    ],
+    "mcdeint": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMcdeint"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMotionCompDeint"
+        }
+    ],
+    "mestimate": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMestimate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMotionEstimate"
+        }
+    ],
+    "minterpolate": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMinterpolate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMotionInterpolate"
+        }
+    ],
+    "mpdecimate": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMpdecimate"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMpDecimate"
+        }
+    ],
+    "nlmeans": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoNlmeans"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoNlMeans"
+        }
+    ],
+    "noformat": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoNoformat"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoNoFormat"
+        }
+    ],
+    "owdenoise": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoOwdenoise"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoOwDenoise"
+        }
+    ],
+    "palettegen": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPalettegen"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPaletteGen"
+        }
+    ],
+    "paletteuse": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPaletteuse"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPaletteUse"
+        }
+    ],
+    "photosensitivity": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPhotosensitivity"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPhotoSensitivity"
+        }
+    ],
+    "pixdesctest": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPixdesctest"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPixDescTest"
+        }
+    ],
+    "pixscope": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPixscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPixScope"
+        }
+    ],
+    "pp": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPostProc"
+        }
+    ],
+    "pp7": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPp7"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPostProc7"
+        }
+    ],
+    "premultiply": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPremultiply"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPreMultiply"
+        }
+    ],
+    "pseudocolor": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoPseudocolor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoPseudoColor"
+        }
+    ],
+    "readvitc": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoReadvitc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoReadVitc"
+        }
+    ],
+    "removegrain": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRemovegrain"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRemoveGrain"
+        }
+    ],
+    "removelogo": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRemovelogo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRemoveLogo"
+        }
+    ],
+    "repeatfields": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRepeatfields"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRepeatFields"
+        }
+    ],
+    "rgbashift": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoRgbashift"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoRgbaShift"
+        }
+    ],
+    "scale2ref": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoScale2ref"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoScale2Ref"
+        }
+    ],
+    "scale_npp": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoScale_npp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoScaleNpp"
+        }
+    ],
+    "selectivecolor": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSelectivecolor"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSelectiveColor"
+        }
+    ],
+    "separatefields": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSeparatefields"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSeparateFields"
+        }
+    ],
+    "setfield": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSetfield"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSetField"
+        }
+    ],
+    "setparams": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSetparams"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSetParams"
+        }
+    ],
+    "showinfo": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShowinfo"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShowInfo"
+        }
+    ],
+    "showpalette": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShowpalette"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShowPalette"
+        }
+    ],
+    "shuffleframes": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShuffleframes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShuffleFrames"
+        }
+    ],
+    "shuffleplanes": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoShuffleplanes"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoShufflePlanes"
+        }
+    ],
+    "signalstats": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSignalstats"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSignalStats"
+        }
+    ],
+    "smartblur": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSmartblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSmartBlur"
+        }
+    ],
+    "stereo3d": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoStereo3d"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoStereo3D"
+        }
+    ],
+    "super2xsai": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSuper2xsai"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSuper2xSaI"
+        }
+    ],
+    "swaprect": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSwaprect"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSwapRect"
+        }
+    ],
+    "swapuv": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoSwapuv"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoSwapUV"
+        }
+    ],
+    "tmix": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTmix"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoTMix"
+        }
+    ],
+    "tonemap": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTonemap"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoToneMap"
+        }
+    ],
+    "tpad": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTpad"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoTPad"
+        }
+    ],
+    "transpose_npp": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoTranspose_npp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoTransposeNpp"
+        }
+    ],
+    "unpremultiply": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoUnpremultiply"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoUnPreMultiply"
+        }
+    ],
+    "unsharp": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoUnsharp"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoUnSharp"
+        }
+    ],
+    "vectorscope": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoEctorscope"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoVectorScope"
+        }
+    ],
+    "vignette": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoIgnette"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoVignette"
+        }
+    ],
+    "vmafmotion": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMafmotion"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoVmafMotion"
+        }
+    ],
+    "xfade": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoXfade"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoXFade"
+        }
+    ],
+    "xmedian": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoXmedian"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoXMedian"
+        }
+    ],
+    "xstack": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoXstack"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoXStack"
+        }
+    ],
+    "yadif_cuda": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoYadif_cuda"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoYadifCuda"
+        }
+    ],
+    "yaepblur": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoYaepblur"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoYaepBlur"
+        }
+    ],
+    "zoompan": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoZoompan"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoZoomPan"
+        }
+    ],
+    "zscale": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoZscale"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoZScale"
+        }
+    ],
+    "buffersink": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoBuffersink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoBufferSink"
+        }
+    ],
+    "nullsink": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoNullsink"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoNullSink"
+        }
+    ],
+    "cellauto": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCellauto"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCellAuto"
+        }
+    ],
+    "coreimagesrc": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoCoreimagesrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoCoreImageSrc"
+        }
+    ],
+    "frei0r_src": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoFrei0r_src"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoFrei0rSrc"
+        }
+    ],
+    "mptestsrc": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoMptestsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoMpTestSrc"
+        }
+    ],
+    "openclsrc": [
+        {
+            "op": "test",
+            "path": "/nameNormalized",
+            "value": "VideoOpenclsrc"
+        },
+        {
+            "op": "replace",
+            "path": "/nameNormalized",
+            "value": "VideoOpenCLSrc"
+        }
+    ]
+}
