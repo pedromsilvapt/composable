@@ -1,0 +1,31 @@
+{
+    "toc": [
+        "Compiler",
+        "Input",
+        "Output",
+        "filter",
+        "Filter",
+        "Composite",
+        "composite",
+        "StreamRef",
+        "StaticStreamRef"
+    ],
+    "inputFiles": ["./src"],
+    "out": "docs",
+    "mode": "file",
+    "theme": "default",
+    "ignoreCompilerErrors": true,
+    "exclude": [
+        "src/CodeGen/**",
+        "src/Filters/**",
+        "src/Declarations/**",
+        "src/test.ts",
+        "src/sample.ts"
+    ],
+    "categoryOrder": [
+        "composable",
+        "composable/composites",
+        "composable/executors",
+        "composable/filters"
+    ]
+}
