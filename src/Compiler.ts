@@ -1,3 +1,5 @@
+import shellescape from 'shell-escape';
+
 /**
  * @category composable
  */
@@ -367,7 +369,7 @@ export class CommandOptions {
     }
 
     public toString () {
-        return this.options.join( ' ' );
+        return shellescape( this.options );
     }
 }
 
