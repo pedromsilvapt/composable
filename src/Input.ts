@@ -63,7 +63,7 @@ export class Input implements ISource {
     outputs : InputStreamRef[] = [];
 
     public get dependencies () : IFragment[] {
-        return [ this ];
+        return [ this, ...this.outputs[ 0 ].dependencies ];
     }
 
     constructor ( url : string, options : ( string | number | IPlaceholder<string | number> )[] = [] ) {

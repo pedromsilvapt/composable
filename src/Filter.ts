@@ -135,12 +135,25 @@ export class Filter<P extends FilterParams = FilterParams> implements IFilter {
         } ).join( '' );
     }
 
+    public compileArgumentValue ( arg: string | number ) : string {
+        if ( typeof arg === 'number' ) {
+            return '' + arg;
+        } else {
+            if ( /[\[\]=;,']/g.test( arg ) ) {
+                return "'" + arg.replace( /\\/g, '\\\\' )
+                    .replace( /'/g, '\\\'' ) + "'";
+            } else {
+                return arg;
+            }
+        }
+    }
+
     public compileArguments ( compiler : ICompiler ) : string {
-        const parameters : any = this.parameters;
+        const parameters = this.parameters;
 
         const named = Object.keys( this.parameters )
             .filter( key => parameters[ key ] !== null && parameters[ key ] !== void 0 )
-            .map( key => `${key}=${ parameters[ key ] }` );
+            .map( key => `${key}=${ this.compileArgumentValue( parameters[ key ] ) }` );
 
         return named.join( ':' );
     }
