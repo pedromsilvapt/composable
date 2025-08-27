@@ -63,6 +63,14 @@ export class FilterStreamRef<P extends FilterParams = FilterParams, F extends Fi
  * const filter = new Filter( input, 'anullsink' );
  * ```
  * 
+ * Some filters expect only one parameter. In that case pass it inside `default` property of parameters. 
+ * ```typescript
+ * // Resulting string will look like `atempo=2`.
+ * const filter = new AudioTempo( input, {
+ *     default: 2,
+ * });
+ * ```
+ * 
  * When filters have more than one input, an array of streams can be provided. Similarly, by default this module allocates one output stream for each
  * filter. In case a filter outputs more than one though, a fourth parameter can be provided indicating how many output streams should be allocated.
  * ```typescript
@@ -150,6 +158,10 @@ export class Filter<P extends FilterParams = FilterParams> implements IFilter {
 
     public compileArguments ( compiler : ICompiler ) : string {
         const parameters = this.parameters;
+
+        if (Object.keys(parameters).length === 1 && 'default' in parameters) {
+            return this.compileArgumentValue(this.parameters.default);
+        }
 
         const named = Object.keys( this.parameters )
             .filter( key => parameters[ key ] !== null && parameters[ key ] !== void 0 )
